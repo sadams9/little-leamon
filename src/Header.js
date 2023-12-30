@@ -1,6 +1,14 @@
 import React from "react";
 
+/* Little Lemon Name and location */
 
-<img src= "./Assets/logo.jpg" alt="Little Lemon logo" />;
+function Header() {
+    return (
+        <div className="header">
+            <h1>Little Lemon</h1>
+            <h2>Chicago</h2>
+        </div>
+    );
+}
 
-export Header;
+export default Header;

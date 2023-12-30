@@ -1,11 +1,11 @@
 import React from 'react';
 import { ReactDOM } from 'react';
-import './App.css';
-import './index.js';
-import './Header.js';
-import './Nav.js';
-import './Main.js';
-import './Footer.js';
+import './styles';
+import './index';
+import './Header';
+import './Nav';
+import './Main';
+import './Footer';
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
       <nav/>
       <main/>
       <footer/>
-      Homepage
     </>
   );
 }
