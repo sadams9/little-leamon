@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactDOM } from 'react';
 import './App.css';
+import './index.js';
 import './Header.js';
 import './Nav.js';
 import './Main.js';
