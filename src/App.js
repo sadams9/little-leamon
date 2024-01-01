@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactDOM } from 'react';
-import './styles';
+import './styles.css';
 import './index';
 import './Header';
 import './Nav';

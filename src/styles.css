@@ -1,16 +1,16 @@
 * {
     background: black;
     background-color: white;
-    width: 1440px;
-    height: 2900px;
+    width: auto;
+    height: auto;
     font-family:"Karla";
     display: flexbox;
     flex-wrap: wrap;
     align-items: flex-start;
      }
-  
+ 
     /* Home */
-   Home {
+   home {
     color: 'rgba(0, 0, 0, 0.20)';
     font-size: 20;
     font-family: "Karla";
@@ -21,7 +21,7 @@
   
   
   /* About */
-   About {
+   about {
     color: 'rgba(0, 0, 0, 0.20)';
     font-size: 20;
     font-family: 'Karla';
@@ -46,9 +46,9 @@
     color: 'black';
     font-size: 20;
     font-family: 'Karla';
-   font-weight: '500';
-   text-transform: 'capitalize';
-   word-wrap: 'break-word';
+    font-weight: '500';
+    text-transform: 'capitalize';
+    word-wrap: 'break-word';
   }
   
   
@@ -74,10 +74,55 @@
     text-transform: 'capitalize';
     word-wrap: 'break-word';
   }
+
+  /*top nav bar */
+  nav {
+    display: inline-flex;
+    height: 123px;
+    padding: 43px 261px 37.917px 288px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  /* hero area */
+  header {
+    background-color: #495E57;
+    width: auto;
+    height: 406px;
+    flex-shrink: 0;
+    margin-top: 75px;
+    margin-bottom: auto;
+  }
+ 
+  /* hero area logo text */
+  header mainText {
+    color: #F4CE14;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Markazi Text;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  /*hero area location text */
+  header location {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Markazi Text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
   
-  
-  
-  
-  
-  
-  export default styles.css;
+ footer {
+    background: #495E57;
+    width: auto;
+    height: 350px;
+    flex-shrink: 0;
+    margin-top: auto;
+ }
