@@ -85,6 +85,13 @@
     flex-shrink: 0;
   }
 
+  li {
+    display: flex;
+    width: 640px;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
   /* hero area */
   header {
     background-color: #495E57;
@@ -119,6 +126,7 @@
     line-height: normal;
   }
   
+/* footer */
  footer {
     background: #495E57;
     width: auto;
