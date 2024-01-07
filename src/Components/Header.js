@@ -1,27 +1,21 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
-/* Little Lemon Name and location */
-
-function mainHeader() {
+const Header = () => {
     return (
-        <div className="header">
-            <h1 className="mainText">Little Lemon</h1>
-            <h2 className="location">Chicago</h2>
-        </div>
-    );
-}
+        <header className="header">
+            <section>
+                {/* banner text */}
+                <div className='banner'>
+                    <h2>Little Lemon</h2>
+                    <h3>Chicago</h3>
+                    <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</p>
+                    <Link to=""><button>Reserve Table</button></Link>
+                </div>
+            </section>
 
-function pictureHome() {
-    return (
-        <img src="./Assets/icons_assets/restaurant chef B.jpg" className="chef" alt="chef sprinkling spices on a dish"/>
+        </header>
     );
- }
+};
 
-function Header() {
-    <div className="hero">
-        <mainHeader />
-        <pictureHome />
-    </div>
-}
- 
 export default Header;
