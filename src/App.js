@@ -1,14 +1,17 @@
 import React from 'react';
 import './styles.css';
 import Nav from './Components/Nav';
-import Header from './Components/Header';
+import Main from './Components/Main';
+import Menu from './Components/Menu';
+
 
 
 function App() {
   return (
     <>
       <Nav/>
-      <Header/>
+      {/* <Main/> */}
+      <Menu/>
     </>
   );
 }
