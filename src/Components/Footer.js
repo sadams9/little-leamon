@@ -1,63 +1,40 @@
 import React from "react";
+import logo from "../images/small_logo.png";
 
-/* footer logo image */
-function FooterImage() {
+const Footer = () => {
     return (
-        <div className="footerImage">
-           <img src= "./Assets/logo.jpg" alt="Little Lemon logo" />;
-        </div>
-    )
-}
+        <footer>
+            <section>
+                <div className="company-info">
+                    <img src={logo} alt="small logo" />
+                </div>
+                <div>
+                    <ul><a href="/">Home</a></ul>
+                    <ul><a href="/">About</a></ul>
+                    <ul><a href="/">Menu</a></ul>
+                    <ul><a href="/">Reservations</a></ul>
+                    <ul><a href="/">Order Online</a></ul>
+                    <ul><a href="/">Login</a></ul>
+                </div>
 
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><strong>Address:</strong> <br/> 555 E Any Street <br/> Chicago, IL 99999</li>
+                        <li><strong>Phone:</strong> <br/> 999-999-9999</li>
+                        <li><strong>Email:</strong> <br/> fakecontact@littlelemon.com</li>
+                    </ul>
+                </div>
 
-/* Footer navigation*/
-
-function FooterNav() {
-    return (
-        <nav>
-            <menu>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#orderonline">Order Online</a></li>
-                <li><a href="#login">Login</a></li>
-            </menu>
-        </nav>
+                <div>
+                    <h3>Social Media</h3>
+                    <ul><a href="facebook.com" alt="facebook page">Facebook</a></ul>
+                    <ul><a href="twitter.com" alt="twitter page">Twitter</a></ul>
+                    <ul><a href="instagram.com" alt="instagram page">Instagram</a></ul>
+                </div>
+            </section>
+        </footer>
     );
-}
-
-
-/*Contact Info*/
-function ContactInfo() {
-    <div className="contactInfo">
-    <h2>Contact</h2>
-    <p>123 Green Street</p>
-    <p>222-333-5555</p>
-    <p>info@emailaddress.com</p>
-    </div>
-}
-
-/* Social Media */
-function SocialMedia() {
-    <div className="socialMedia">
-        <h2>Social Media</h2>
-        <a href="facebook.com" alt="facebook">Facebook</a>
-        <a href="twitter.com">X</a>
-        <a href="instagram.com">Instagram</a>
-    </div>
-
-}
-
-function Footer() {
-    return (
-        <div className="footer">
-           <FooterImage />
-            <FooterNav />
-            <ContactInfo />
-            <SocialMedia />
-        </div>
-    );
-}
+};
 
 export default Footer;

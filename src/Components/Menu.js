@@ -1,10 +1,29 @@
 import React from "react";
 import recipes from "../recipes";
+import Swal from "sweetalert2";
 
 const Menu = () => {
 
-    const handleOrder = () => {
-
+    {/* order pop-up action */}
+    const handleOrder = (id) => {
+        console.log(id, "id is clicked");
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't regret your order!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, order it!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Ordered!",
+                text: "Your order processed.",
+                icon: "success"
+              });
+            }
+          });
     }
 
     return (
@@ -25,7 +44,7 @@ const Menu = () => {
                                 <p>{recipe.price}</p>
                             </div>
                             <p>{recipe.description}</p>
-                            <button className="orderBtn">Order Now</button>
+                            <button className="orderBtn" onClick={() => handleOrder(recipe.id)}>Order Now</button>
                         </div>
                     </div>)
                 }

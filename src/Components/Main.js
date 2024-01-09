@@ -59,5 +59,5 @@ const Main = () => {
     )
 }
 
-{/* UseNavigate error to fix */}
+
 export default Main;
