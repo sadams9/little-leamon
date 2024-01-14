@@ -12,10 +12,12 @@ const BookingForm = (props) => {
         props.SubmitForm(e);
     }
 
-    const handleChange = (e) => {
+    {/* Date Change */}
+    const handleDateChange = (e) => {
         setDate(e);
         props.dispatch(e);
     }
+  
 
     return (
         <header>
@@ -25,7 +27,7 @@ const BookingForm = (props) => {
                         {/* Date selector */}
                         <div>
                             <label htmlFor="book-date">Choose Date:</label>
-                            <input id="book-date" value={date} onChange={(e) => handleChange(e.target.value)} 
+                            <input id="book-date" value={date} onChange={(e) => handleDateChange(e.target.value)}
                             type="date" required/>
                         </div>
 
@@ -34,10 +36,12 @@ const BookingForm = (props) => {
                         <label htmlFor="book-time">Choose Time:</label>
                         <select id="book-time" value={times} onChange={(e) => setTimes(e.target.value)}>
                             <option value="">Select a Time</option>
-                            {
-                                props.availableTimes.availableTimes.map(availableTimes => {return <option key=
-                                    {availableTimes}>{availableTimes}</option>})
-                            }
+                                {
+                                 props.availableTimes.availableTimes.map((availableTime, index) => (
+                                    <option key={index}>{availableTime}</option>
+                                        ))
+                                }
+
                         </select>
                         </div>
 
@@ -59,7 +63,7 @@ const BookingForm = (props) => {
 
                         {/* Submit Button */}
                         <div className='btnReceive'>
-                            <input aria-Label='On Click' type='submit' value={"Make Your Reservation"}/>
+                            <input aria-label='On Click' type='submit' value={"Make Your Reservation"}/>
                         </div>
                     </fieldset>
                 </form>
