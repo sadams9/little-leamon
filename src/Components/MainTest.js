@@ -4,7 +4,7 @@ import Header from "./Header";
 import Booking from "./Booking";
 import ConfirmedBooking from "./ConfirmedBooking";
 
-const Main = () => {
+const MainTest = () => {
   const seedRandom = function(seed){
     var m = 2**35 - 31;
     var a = 185852;
@@ -59,4 +59,6 @@ const Main = () => {
   )
 }
 
-export default Main;
+export default MainTest;
+
+

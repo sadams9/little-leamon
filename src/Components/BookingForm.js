@@ -37,8 +37,8 @@ const BookingForm = (props) => {
                         <select id="book-time" value={times} onChange={(e) => setTimes(e.target.value)}>
                             <option value="">Select a Time</option>
                                 {
-                                 props.availableTimes.availableTimes.map((availableTime, index) => (
-                                    <option key={index}>{availableTime}</option>
+                                 props.availableTimes.availableTimes.map((availableTimes, index) => (
+                                    <option key={index}>{availableTimes}</option>
                                         ))
                                 }
 

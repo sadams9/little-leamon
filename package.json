@@ -9,8 +9,8 @@
     "joi": "^17.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.1",
-    "sweetalert2": "^11.10.2",
+    "react-router-dom": "^6.21.2",
+    "sweetalert2": "^11.6.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
